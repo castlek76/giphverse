@@ -1,0 +1,39 @@
+html {
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(35, 40, 40);
+    background-image: linear-gradient(315deg, #3c4a4a 0%, #00000000 75%);
+
+}
+#input {
+    width: 250px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Delius";
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the button */
+button {
+    background-color: #171717;
+    color: rgb(250, 255, 254);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: "delius";
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Style for images inside the userInput div */
+#userInput img {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+}

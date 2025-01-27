@@ -1,6 +1,6 @@
 function sendApiRequest() {
     let userInput = document.getElementById("input"); 
-    console.log(userInput.value); // Check what value the user typed
+    console.log(userInput.value); // Checks what value the user typed
     let giphyApiKey = 'dTqTHDKRagHW6yfUAFDCrXWGvBf0ikfx';
     let giphyApiUrl = `https://api.giphy.com/v1/gifs/search?q=${userInput.value}&rating=g&api_key=${giphyApiKey}`;
 
