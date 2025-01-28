@@ -73,7 +73,6 @@ html {
 
 button {
     display: flex;
-    float: center;
     margin: 10px;
     background-color: #54706f;
     color: rgb(250, 255, 254);
