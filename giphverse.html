@@ -4,9 +4,26 @@
         <title>Giphverse</title>
         <script src="giphverse.js"></script>
         <link rel="stylesheet" href="giphverse.css">
-        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Rampart+One&family=RocknRoll+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id ="siteTitle">
+            Giphverse
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <a href="giphverse.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Trending</a>
+            </div>
+        </nav>
         <input type="text" id="input">
         <button onClick="sendApiRequest()">Search</button>
         </div>

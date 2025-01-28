@@ -2,38 +2,164 @@ html {
     align-items:center;
     justify-content: center;
     background-color:rgb(35, 40, 40);
-    background-image: linear-gradient(315deg, #3c4a4a 0%, #00000000 75%);
-
+    background-image: linear-gradient(450deg, #3c4a4a 0%, #00000000 75%);
 }
-#input {
-    width: 250px;
-    padding: 10px;
-    font-size: 25px;
-    font-family: "Delius";
-    border: 1px solid #ccc;
+
+#siteTitle {
+    display:flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 70px;
+    font-family: "RocknRoll One", serif;
+    text-align: left;
+    text-shadow: 5px 5px 10px rgb(13, 13, 13);
+    letter-spacing: 8px;
+    background: linear-gradient(90deg, #aeafaf, #dcdcdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu {
+    display: flex;
+    float: right;
+    margin-right: 35px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.menu a {
+    color: rgb(150, 152, 152);
+    text-decoration: none;
+    padding: 10px 15px;
     border-radius: 5px;
+    font-family: "Delius", serif;
+    font-size: 18px;
 }
 
-/* Style for the button */
-button {
+.menu a:hover {
+    background-color: #141515;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(14, 14, 14);
+}
+
+#input {
+    display: flex;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50%;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Delius", serif;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-color: #171717;
+    color: white;
+    
+}
+
+button {
+    display: flex;
+    float: center;
+    margin: 10px;
+    background-color: #54706f;
     color: rgb(250, 255, 254);
     border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    font-family: "delius";
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-family: "delius", serif;
     cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 90%;
+    max-width: 70px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #3c4a4a;
+}
+
+#userInput {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#userInput img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
+@media (max-width: 320px) {
+    #siteTitle {
+        font-size: 25px;
+    }
+}
 
-/* Style for images inside the userInput div */
-#userInput img {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 250px;
-    border-radius: 5px;
+@media (max-width: 320px) {
+    .menu {
+        display: none;
+        flex-direction:column;
+        background-color: transparent;
+    }
+
+    .menu.active {
+        display:flex;
+        margin-top: 5px;
+        border-radius: 5%;
+        background-color: rgb(110, 112, 112, 50%);
+    }
+
+    .menu a {
+        font-size: 11px;
+        line-height: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+        
+    }
+
+    .hamburger {
+        display: flex;
+        float:right;
+        margin-top: -20px;
+        margin-right: 30px; 
+    }
+}
+
+@media (max-width: 320px) {
+    #input, button {
+        width: 35%;
+        height:auto;
+    }
+
+    #userInput {
+        margin-top: 70px;
+        grid-template-columns:none;
+    }
+
+    
+    #userInput img {
+        width: 88%;
+        height: auto;
+        border-radius: 5px;
+    }
 }
